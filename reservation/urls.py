@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', venue_page.Home),
     path('<str:action>/', venue_page.action_handler),
+    path('<str:action>/<str:id>/', venue_page.action_handler01),
 
 ]
